@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 GoBeyond</title>
+</head>
+<header>
+    <a href="/" class="logo">
+        <img src="assets/gobeyond_logo_white 1.png">
+    </a>
+    <div class="menu">
+        <div class="menuContainer">
+            <a class="headerMenu1" href="/">Home</a>
+            <select name="categoriaUm" id="categoriaUmDropdown" class="headerMenu">
+                <option value="teste1">Categoria 1</option>
+                <option value="teste2">Categoria 2</option>
+                <option value="teste3">Categoria 3</option>
+                <option value="teste4">Categoria 4</option>
+            </select>
+            <select name="dropdownHeader" id="categoriaDoisDropdown" class="headerMenu">
+                <option value="teste1">Tipo 1</option>
+                <option value="teste2">Tipo 2</option>
+                <option value="teste3">Tipo 3</option>
+                <option value="teste4">Tipo 4</option>
+            </select>
+            <a class="headerMenu" href="https://is.gd/abqHaH">Contato</a>
+        </div>
+    </div>
+    <div class="inputContainer">
+        <input type="text" class="busca" placeholder="O que está procurando?">
+        <img src="assets/lupa.png" width="18px" height="18px">
+        </input>
+    </div>
+    <div class="userContainer">
+        <a href="/" class="imgUser">
+            <img src="assets/user.png" width="18px" height="18px">
+        </a>
+        <a href="/">
+            <h5 class="myAccount">Minha Conta</h5>
+        </a>
+    </div>
+</header>
+
+<body>
+    <!--div do slideshow (carousel)-->
+    <section class="carousselContainer fade">
+        <div class="carouselPage" >
+            <img class="blackImage" src="assets/banner.png" style='width: 100%; height:26.875rem' />
+            <h2 class="text">Olá, você quer fazer entrar de cabeça em<br /> desenvolvimento?</h2>
+            <h1 class="textTwo"><strong>front-end • back-end • mobile</h1></strong>
+        </div>
+        <div class="carouselPage">
+            <img src="https://loremflickr.com/990/430?random=1" style='width: 100%; height:26.875rem' />
+        </div>
+        <div class="carouselPage">
+            <img src="https://loremflickr.com/990/430?random=2" style='width: 100%; height:26.875rem' />
+        </div>
+        <div class="carouselPage">
+            <img src="https://loremflickr.com/990/430?random=3" style='width: 100%; height:26.875rem' />
+        </div>
+        <div class="carouselPage">
+            <img src="https://loremflickr.com/990/430?random=4" style='width: 100%; height:26.875rem' />
+        </div>
+        <a class="prev" onClick="moreSlides(-1)">&#10094</a>
+        <a class="next" onClick="moreSlides(1)">&#10095</a>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+    <!--MEIO DA PAGE-->
+    <section class="carouselProductSection">
+        <div class="titleContainer">
+            <div class="sectionTitle">
+                <h2>Mais Vendidos</h2>
+            </div>
+        </div>
+
+        <div class="containerDiv">
+            <div class="shelfContainer">
+                <div class="imageItemContainer">
+                    <img src="assets/sapato.png" height="215px" width="200">
+                </div>
+                <p>SAPATO FLOATER PRETO</p>
+                <div class="infoItemContainer">
+                    <div class="enjoyItem">
+                        <div class="rating rating2">
+                            <a href="#5" title="Give 5 stars">★</a>
+                            <a href="#4" title="Give 4 stars">★</a>
+                            <a href="#3" title="Give 3 stars">★</a>
+                            <a href="#2" title="Give 2 stars">★</a>
+                            <a href="#1" title="Give 1 star">★</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceItem">
+                    <p>
+                        de R$ 299,00<br />
+                    </p>
+                    <strong>
+                        <p>Por R$259,90</p>
+                    </strong>
+                    <h6>ou em 9x de R$ 28,87</h6>
+                </div>
+                <button type="submit" class="btnComprar">Comprar</button>
+            </div>
+            <div class="shelfContainer">
+                <div class="imageItemContainer">
+                    <img src="assets/sapato.png" height="215px" width="200">
+                </div>
+                <p>SAPATO FLOATER PRETO</p>
+                <div class="infoItemContainer">
+                    <div class="enjoyItem">
+                        <div class="rating rating2">
+                            <a href="#5" title="Give 5 stars">★</a>
+                            <a href="#4" title="Give 4 stars">★</a>
+                            <a href="#3" title="Give 3 stars">★</a>
+                            <a href="#2" title="Give 2 stars">★</a>
+                            <a href="#1" title="Give 1 star">★</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceItem">
+                    <p>
+                        de R$ 299,00<br />
+                    </p>
+                    <strong>
+                        <p>Por R$259,90</p>
+                    </strong>
+                    <h6>ou em 9x de R$ 28,87</h6>
+                </div>
+                <button type="submit" class="btnComprar">Comprar</button>
+            </div>
+            <div class="shelfContainer">
+                <div class="imageItemContainer">
+                    <img src="assets/sapato.png" height="215px" width="200">
+                </div>
+                <p>SAPATO FLOATER PRETO</p>
+                <div class="infoItemContainer">
+                    <div class="enjoyItem">
+                        <div class="rating rating2">
+                            <a href="#5" title="Give 5 stars">★</a>
+                            <a href="#4" title="Give 4 stars">★</a>
+                            <a href="#3" title="Give 3 stars">★</a>
+                            <a href="#2" title="Give 2 stars">★</a>
+                            <a href="#1" title="Give 1 star">★</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceItem">
+                    <p>
+                        de R$ 299,00<br />
+                    </p>
+                    <strong>
+                        <p>Por R$259,90</p>
+                    </strong>
+                    <h6>ou em 9x de R$ 28,87</h6>
+                </div>
+                <button type="submit" class="btnComprar">Comprar</button>
+            </div>
+            <div class="shelfContainer">
+                <div class="imageItemContainer">
+                    <img src="assets/sapato.png" height="215px" width="200">
+                </div>
+                <p>SAPATO FLOATER PRETO</p>
+                <div class="infoItemContainer">
+                    <div class="enjoyItem">
+                        <div class="rating rating2">
+                            <a href="#5" title="Give 5 stars">★</a>
+                            <a href="#4" title="Give 4 stars">★</a>
+                            <a href="#3" title="Give 3 stars">★</a>
+                            <a href="#2" title="Give 2 stars">★</a>
+                            <a href="#1" title="Give 1 star">★</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="priceItem">
+                    <p>
+                        de R$ 299,00<br />
+                    </p>
+                    <strong>
+                        <p>Por R$259,90</p>
+                    </strong>
+                    <h6>ou em 9x de R$ 28,87</h6>
+                </div>
+                <button type="submit" class="btnComprar">Comprar</button>
+            </div>
+            <div class="containerDiv">
+                <div class="shelfContainer">
+                    <div class="imageItemContainer">
+                        <img src="assets/sapato.png" height="215px" width="200">
+                    </div>
+                    <p>SAPATO FLOATER PRETO</p>
+                    <div class="infoItemContainer">
+                        <div class="enjoyItem">
+                            <div class="rating rating2">
+                                <a href="#5" title="Give 5 stars">★</a>
+                                <a href="#4" title="Give 4 stars">★</a>
+                                <a href="#3" title="Give 3 stars">★</a>
+                                <a href="#2" title="Give 2 stars">★</a>
+                                <a href="#1" title="Give 1 star">★</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priceItem">
+                        <p>
+                            de R$ 299,00<br />
+                        </p>
+                        <strong>
+                            <p>Por R$259,90</p>
+                        </strong>
+                        <h6>ou em 9x de R$ 28,87</h6>
+                    </div>
+                    <button type="submit" class="btnComprar">Comprar</button>
+                </div>
+                <div class="shelfContainer">
+                    <div class="imageItemContainer">
+                        <img src="assets/sapato.png" height="215px" width="200">
+                    </div>
+                    <p>SAPATO FLOATER PRETO</p>
+                    <div class="infoItemContainer">
+                        <div class="enjoyItem">
+                            <div class="rating rating2">
+                                <a href="#5" title="Give 5 stars">★</a>
+                                <a href="#4" title="Give 4 stars">★</a>
+                                <a href="#3" title="Give 3 stars">★</a>
+                                <a href="#2" title="Give 2 stars">★</a>
+                                <a href="#1" title="Give 1 star">★</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priceItem">
+                        <p>
+                            de R$ 299,00<br />
+                        </p>
+                        <strong>
+                            <p>Por R$259,90</p>
+                        </strong>
+                        <h6>ou em 9x de R$ 28,87</h6>
+                    </div>
+                    <button type="submit" class="btnComprar">Comprar</button>
+                </div>
+                <div class="shelfContainer">
+                    <div class="imageItemContainer">
+                        <img src="assets/sapato.png" height="215px" width="200">
+                    </div>
+                    <p>SAPATO FLOATER PRETO</p>
+                    <div class="infoItemContainer">
+                        <div class="enjoyItem">
+                            <div class="rating rating2">
+                                <a href="#5" title="Give 5 stars">★</a>
+                                <a href="#4" title="Give 4 stars">★</a>
+                                <a href="#3" title="Give 3 stars">★</a>
+                                <a href="#2" title="Give 2 stars">★</a>
+                                <a href="#1" title="Give 1 star">★</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priceItem">
+                        <p>
+                            de R$ 299,00<br />
+                        </p>
+                        <strong>
+                            <p>Por R$259,90</p>
+                        </strong>
+                        <h6>ou em 9x de R$ 28,87</h6>
+                    </div>
+                    <button type="submit" class="btnComprar">Comprar</button>
+                </div>
+                <div class="shelfContainer">
+                    <div class="imageItemContainer">
+                        <img src="assets/sapato.png" height="215px" width="200">
+                    </div>
+                    <p>SAPATO FLOATER PRETO</p>
+                    <div class="infoItemContainer">
+                        <div class="enjoyItem">
+                            <div class="rating rating2">
+                                <a href="#5" title="Give 5 stars">★</a>
+                                <a href="#4" title="Give 4 stars">★</a>
+                                <a href="#3" title="Give 3 stars">★</a>
+                                <a href="#2" title="Give 2 stars">★</a>
+                                <a href="#1" title="Give 1 star">★</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="priceItem">
+                        <p>
+                            de R$ 299,00<br />
+                        </p>
+                        <strong>
+                            <p>Por R$259,90</p>
+                        </strong>
+                        <h6>ou em 9x de R$ 28,87</h6>
+                    </div>
+                    <button type="submit" class="btnComprar">Comprar</button>
+                </div>
+                <div class="containerDiv">
+                    <div class="shelfContainer">
+                        <div class="imageItemContainer">
+                            <img src="assets/sapato.png" height="215px" width="200">
+                        </div>
+                        <p>SAPATO FLOATER PRETO</p>
+                        <div class="infoItemContainer">
+                            <div class="enjoyItem">
+                                <div class="rating rating2">
+                                    <a href="#5" title="Give 5 stars">★</a>
+                                    <a href="#4" title="Give 4 stars">★</a>
+                                    <a href="#3" title="Give 3 stars">★</a>
+                                    <a href="#2" title="Give 2 stars">★</a>
+                                    <a href="#1" title="Give 1 star">★</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="priceItem">
+                            <p>
+                                de R$ 299,00<br />
+                            </p>
+                            <strong>
+                                <p>Por R$259,90</p>
+                            </strong>
+                            <h6>ou em 9x de R$ 28,87</h6>
+                        </div>
+                        <button type="submit" class="btnComprar">Comprar</button>
+                    </div>
+                    <div class="shelfContainer">
+                        <div class="imageItemContainer">
+                            <img src="assets/sapato.png" height="215px" width="200">
+                        </div>
+                        <p>SAPATO FLOATER PRETO</p>
+                        <div class="infoItemContainer">
+                            <div class="enjoyItem">
+                                <div class="rating rating2">
+                                    <a href="#5" title="Give 5 stars">★</a>
+                                    <a href="#4" title="Give 4 stars">★</a>
+                                    <a href="#3" title="Give 3 stars">★</a>
+                                    <a href="#2" title="Give 2 stars">★</a>
+                                    <a href="#1" title="Give 1 star">★</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="priceItem">
+                            <p>
+                                de R$ 299,00<br />
+                            </p>
+                            <strong>
+                                <p>Por R$259,90</p>
+                            </strong>
+                            <h6>ou em 9x de R$ 28,87</h6>
+                        </div>
+                        <button type="submit" class="btnComprar">Comprar</button>
+                    </div>
+                    <div class="shelfContainer">
+                        <div class="imageItemContainer">
+                            <img src="assets/sapato.png" height="215px" width="200">
+                        </div>
+                        <p>SAPATO FLOATER PRETO</p>
+                        <div class="infoItemContainer">
+                            <div class="enjoyItem">
+                                <div class="rating rating2">
+                                    <a href="#5" title="Give 5 stars">★</a>
+                                    <a href="#4" title="Give 4 stars">★</a>
+                                    <a href="#3" title="Give 3 stars">★</a>
+                                    <a href="#2" title="Give 2 stars">★</a>
+                                    <a href="#1" title="Give 1 star">★</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="priceItem">
+                            <p>
+                                de R$ 299,00<br />
+                            </p>
+                            <strong>
+                                <p>Por R$259,90</p>
+                            </strong>
+                            <h6>ou em 9x de R$ 28,87</h6>
+                        </div>
+                        <button type="submit" class="btnComprar">Comprar</button>
+                    </div>
+                    <div class="shelfContainer">
+                        <div class="imageItemContainer">
+                            <img src="assets/sapato.png" height="215px" width="200">
+                        </div>
+                        <p>SAPATO FLOATER PRETO</p>
+                        <div class="infoItemContainer">
+                            <div class="enjoyItem">
+                                <div class="rating rating2">
+                                    <a href="#5" title="Give 5 stars">★</a>
+                                    <a href="#4" title="Give 4 stars">★</a>
+                                    <a href="#3" title="Give 3 stars">★</a>
+                                    <a href="#2" title="Give 2 stars">★</a>
+                                    <a href="#1" title="Give 1 star">★</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="priceItem">
+                            <p>
+                                de R$ 299,00<br />
+                            </p>
+                            <strong>
+                                <p>Por R$259,90</p>
+                            </strong>
+                            <h6>ou em 9x de R$ 28,87</h6>
+                        </div>
+                        <button type="submit" class="btnComprar">Comprar</button>
+                    </div>
+        </div>
+        <a class="preview" onClick="maisSlides(-1)">&#10094</a>
+        <a class="nextPage" onClick="maisSlides(1)">&#10095</a>    
+    </section>
+    <section class="newsletter">
+        <div class="newsletterTitle">
+            <h3>Participe de nossas news com promoções e novidades!</h3>
+        </div>
+        <div class="cadastroContainer">
+            <input type="text" name="Nome" placeholder="Digite seu nome" class = "nomeCadastro"/>
+            <input type="text" name="email" placeholder="Digite seu email" class = "emailCadastro"/>
+            <button type="submit" name="cadastro" class="btnCadastro">Eu Quero!</button>
+        </div>
+    </section>
+</body>
+<footer class="footerContainer" role="contentinfo">
+    <div class=localization>
+        <h2 class = titleLocal>Localização</h2>
+        <br />
+        <div class="yellowBarra"></div>
+        <br />
+        <p>Avenida Andrômeda, 2000. Bloco 6 e 8</p>
+        <br />
+        <p>Alphavile SP</p>
+        <br />
+        <p>brasil@corebiz.ag</p>
+        <br />
+        <p>+55 11 3090 1039</p>
+
+    </div>
+</footer>
+<link href="styles.css" rel="stylesheet" />
+<script src="script.js"></script>
+
+</html>
