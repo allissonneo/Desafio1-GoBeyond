@@ -57,3 +57,25 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+
+
+function salvarDados(){
+  var nomeCadastro = document.getElementById('nomeCadastro');
+  var emailCadastro = document.getElementById('emailCadastro');
+  var dados = JSON.parse(localStorage.getItem(nomeCadastro));
+  if(dados == null){
+    localStorage.setItem('nomeCadastro','[]');
+    dados = [];
+  }
+  var auxRegistro = {
+    nome: nomeCadastro.value,
+    email: emailCadastro.value
+  }
+  dados.push(auxRegistro);
+  localStorage.setItem("nomeCadastro", JSON.stringify(dados));
+}
+
+function validaForm() {
+  
+}
