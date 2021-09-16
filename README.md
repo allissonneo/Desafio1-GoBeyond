@@ -4,17 +4,19 @@ A Corebiz nos deu 48 horas para terminar a Landing Page. O principal objetivo de
 As tecnologias usadas neste teste foram:
 ## Techs
 HTML
+
 CSS
+
 JavaScript
 
 ## Screenshots
-## Header
+### Header
 ![ScreenShot1](https://i.imgur.com/cF2tKPn.png)
 
-## Produtos
+### Produtos
 ![Screenshot2](https://i.imgur.com/rGKYwMQ.png)
 
-## Footer
+### Footer
 ![Screenshot3](https://i.imgur.com/XiLBf7z.png)
 
 
